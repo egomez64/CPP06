@@ -13,7 +13,7 @@ OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
 
-$(OBJ): $(SRC)
+$(NAME): $(OBJ)
 	$(GXX) $(CFLAGS) $^ -o $@
 
 %.o: %.cpp

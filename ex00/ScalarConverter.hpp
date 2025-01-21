@@ -4,7 +4,8 @@
 #include <iostream>
 #include <cmath>
 #include <string.h>
-#include <climits>
+#include <limits>
+#include <cstdlib>
 
 class ScalarConverter
 {
@@ -15,11 +16,11 @@ class ScalarConverter
 	private:
 		static int type(const std::string &str);
 		static void char_type(const char &c);
-		static void int_type(const int &nb);
+		static void int_type(const long int &nb);
 		static void float_type(const float &nb);
 		static void double_type(const double &nb);
 		static void inf_type(const std::string &str);
-		static void nan_type();
+		static void nan_type(const std::string &str);
 
 	private:
 		enum TYPE
